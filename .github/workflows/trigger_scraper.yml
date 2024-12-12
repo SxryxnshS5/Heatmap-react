@@ -1,0 +1,58 @@
+name: Trigger Scraper for Multiple Symbols and Save CSVs
+
+on:
+  schedule:
+    - cron: '30 19 * * *'  # Runs at 1 AM IST (7:30 PM UTC)
+    - cron: '30 7 * * *'   # Runs at 1 PM IST (7:30 AM UTC)
+  workflow_dispatch:        # Allows manual triggering of the workflow
+
+jobs:
+  trigger_scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Create "public/Scraped_data" Directory
+      run: mkdir -p "public/Scraped_data"
+
+    - name: Define Symbols to Scrape
+      id: symbols
+      run: echo "SYMBOLS=NIFTYIT BANKNIFTY NIFTYFMCG NIFTYENERGY NIFTYPHARMA NIFTYCONSUMP NIFTYAUTO NIFTYMETAL NIFTYFINANCE" >> $GITHUB_ENV
+
+    - name: Trigger Scraper for Each Symbol and Download CSVs
+      run: |
+        failed_symbols=()
+        
+        for symbol in $SYMBOLS; do
+          echo "Scraping data for $symbol..."
+          output_file="public/Scraped_data/${symbol}_stock_data.csv"
+          
+          if curl --retry 5 --retry-delay 60 --max-time 600 -o "$output_file" "https://python-scraper-api-r1uj.onrender.com/api/$symbol"; then
+            echo "Successfully scraped data for $symbol"
+          else
+            echo "Failed to scrape data for $symbol"
+            failed_symbols+=("$symbol")
+          fi
+        done
+        
+        if [ ${#failed_symbols[@]} -ne 0 ]; then
+          echo "The following symbols failed to scrape: ${failed_symbols[*]}"
+        else
+          echo "All symbols scraped successfully."
+        fi
+
+    - name: Commit and Push Updated CSVs
+      run: |
+        git config --local user.name "github-actions"
+        git config --local user.email "github-actions@github.com"
+        git add "public/Scraped_data/*.csv"
+
+        # Check if there are any changes to commit
+        if git diff --cached --quiet; then
+          echo "No changes to commit."
+        else
+          git commit -m "Automated update of stock data for symbols: $SYMBOLS"
+          git push
+        fi
