@@ -1,0 +1,18 @@
+.btn {
+    background-color: #48bb78;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    background-color: #38a169;
+  }
+ 
