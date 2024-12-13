@@ -47,7 +47,7 @@ jobs:
     - name: Commit and Push Updated CSVs
       run: |
         git config --local user.name "github-actions"
-        git config --local user.email "github-actions@github.com"
+        git config --local user.email "c2064746@newcastle.ac.uk"
         git add "public/Scraped_data/*.csv"
 
         # Check if there are any changes to commit
