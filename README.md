@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# 📊 Stock Heatmap React Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project visualizes stock market data as a dynamic heatmap, leveraging **React**, **D3.js**, and automated data updates powered by my [Python Playwright Stock Scraper API](https://github.com/SxryxnshS5/Python-Playwright-StockScraper-API). The app is designed to provide a clear, interactive representation of stock market trends.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Dynamic Heatmap**: Visualizes stock price changes with interactive treemap charts.
+- **Custom Stock Scraper API**: Utilizes your own API for fetching the latest stock data.
+- **Automated Data Updates**: CSV stock data is automatically updated through GitHub Actions.
+- **D3.js Integration**: Treemap rendering and interactive tooltips powered by D3.js.
+- **Responsive Design**: The heatmap adjusts dynamically to screen size changes.
+- **Hover Effects**: Display detailed stock information on hover.
 
-### `npm start`
+## 🌐 Deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is deployed on **Vercel**: [Live Demo](https://stock-heatmap.vercel.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Repositories
 
-### `npm test`
+- **Heatmap Web App**: [Stock Heatmap React](https://github.com/SxryxnshS5/Heatmap-react)
+- **Custom Stock Scraper API**: [Python Playwright Stock Scraper API](https://github.com/SxryxnshS5/Python-Playwright-StockScraper-API)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### About the Stock Scraper API
 
-### `npm run build`
+This web app relies on my **Python Playwright Stock Scraper API** to fetch real-time stock data. The API scrapes data directly from market sources, ensuring accuracy and freshness. The scraped data is formatted into a CSV and seamlessly integrated into the heatmap app via automated workflows.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📊 Data Flow
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Custom Stock Scraper API**:
+   - Scrapes stock market data periodically.
+   - Formats the data into CSV files.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **GitHub Actions**:
+   - Automates the process of updating CSV files in the repository.
 
-### `npm run eject`
+3. **React App**:
+   - Fetches the updated CSV data dynamically.
+   - Processes and visualizes the data as a treemap using D3.js.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Sample CSV Format
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```csv
+name,price,change
+Tata Steel,140.5,-2.3
+JSW Steel,710.4,3.1
+Hindalco,420.6,-1.2
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚙️ How It Works
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Fetching CSV Data**:
+   - CSV files are loaded dynamically with a cache-busting timestamp to ensure up-to-date information.
+   
+2. **Treemap Visualization**:
+   - Data is processed into a hierarchical format and visualized as a heatmap using D3.js.
+   - Green shades represent gains, while red shades indicate losses.
+   
+3. **Tooltip Interactivity**:
+   - Hovering over a stock displays detailed information (name, price) via a tooltip.
 
-## Learn More
+4. **Automatic Updates**:
+   - Your stock scraper runs on a schedule and updates the CSV data in the repository using GitHub Actions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone the repository**:
 
-### Code Splitting
+   ```bash
+   git clone https://github.com/SxryxnshS5/Heatmap-react.git
+   cd Heatmap-react
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Install dependencies**:
 
-### Analyzing the Bundle Size
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Start the app**:
 
-### Making a Progressive Web App
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Open the app in your browser:
 
-### Advanced Configuration
+   ```
+   http://localhost:3000
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔧 Dependencies
 
-### Deployment
+- **React**: For building the UI.
+- **D3.js**: For creating interactive data visualizations.
+- **GitHub Actions**: For automating CSV updates.
+- **Custom Stock Scraper API**: Your Python API for fetching real-time stock data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🌐 Directory Structure
 
-### `npm run build` fails to minify
+```
+Heatmap-react/
+├── public/
+│   └── Scraped_data/
+│       └── NIFTYMETAL_stock_data.csv  # CSV stock data
+├── src/
+│   ├── components/
+│   │   └── StockTreemap.js            # Main heatmap component
+│   └── App.js
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🤝 Contributions
+
+Contributions are welcome! If you have ideas to improve the app or the stock scraper, feel free to submit a pull request or open an issue.
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+By combining the power of React, D3.js, and your custom-built scraper API, this project delivers a fast and reliable way to visualize stock market trends. **Happy coding!** 🖥️📈
