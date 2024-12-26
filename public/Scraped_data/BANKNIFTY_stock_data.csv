@@ -1,13 +1,3 @@
-name,price,change
-FEDERALBNK,197.85,0.57
-PNB,102.11,0.46
-CANBK,100.92,0.37
-KOTAKBANK,1755.25,0.35
-BANKBARODA,245.7,0.31
-INDUSINDBK,936.65,0.14
-SBIN,812.05,0.0
-ICICIBANK,1294.0,-0.25
-AXISBANK,1075.2,-0.34
-HDFCBANK,1789.7,-0.47
-IDFCFIRSTB,61.91,-0.61
-AUBANK,548.7,-1.34
+Error: Page.goto: Page crashed
+Call log:
+  - navigating to "https://portal.tradebrains.in/index/BANKNIFTY/heatmap", waiting until "load"
