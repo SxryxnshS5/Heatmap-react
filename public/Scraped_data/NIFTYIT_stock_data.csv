@@ -1,3 +1,11 @@
-Error: Page.goto: Page crashed
-Call log:
-  - navigating to "https://portal.tradebrains.in/index/NIFTYIT/heatmap", waiting until "load"
+name,price,change
+COFORGE,9493.25,1.06
+PERSISTENT,6395.8,0.71
+LTIM,5752.35,0.47
+HCLTECH,1900.75,0.2
+WIPRO,305.05,-0.08
+INFY,1907.4,-0.09
+TCS,4169.1,-0.25
+TECHM,1698.7,-0.36
+MPHASIS,2908.45,-0.76
+LTTS,4668.05,-1.3

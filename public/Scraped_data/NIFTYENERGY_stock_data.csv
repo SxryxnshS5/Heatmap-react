@@ -1,3 +1,11 @@
-Error: Page.goto: Page crashed
-Call log:
-  - navigating to "https://portal.tradebrains.in/index/NIFTYENERGY/heatmap", waiting until "load"
+name,price,change
+ADANIGREEN,1064.25,3.22
+ADANIPOWER,507.15,2.25
+BPCL,295.6,1.23
+TATAPOWER,404.3,1.23
+COALINDIA,386.6,0.55
+ONGC,240.25,0.54
+POWERGRID,310.3,0.06
+NTPC,334.65,-0.19
+IOC,137.85,-0.3
+RELIANCE,1216.55,-0.51

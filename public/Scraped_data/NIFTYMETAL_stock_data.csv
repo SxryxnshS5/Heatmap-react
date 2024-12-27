@@ -1,3 +1,16 @@
-Error: Page.goto: Page crashed
-Call log:
-  - navigating to "https://portal.tradebrains.in/index/NIFTYMETAL/heatmap", waiting until "load"
+name,price,change
+NATIONALUM,217.07,1.73
+ADANIENT,2400.25,1.17
+NMDC,214.45,0.95
+WELCORP,798.3,0.77
+JSL,733.85,0.52
+HINDALCO,628.75,0.21
+RATNAMANI,3285.0,0.15
+TATASTEEL,140.36,-0.01
+JINDALSTEL,941.35,-0.14
+VEDL,460.45,-0.36
+JSWSTEEL,914.45,-0.8
+SAIL,117.59,-1.23
+APLAPOLLO,1497.2,-1.26
+HINDZINC,453.25,-2.19
+HINDCOPPER,263.2,-6.22
