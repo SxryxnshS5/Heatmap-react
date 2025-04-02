@@ -1,11 +1,3 @@
-name,price,change
-WIPRO,261.7,-0.21
-LTIM,4474.85,-0.37
-TECHM,1410.9,-0.52
-HCLTECH,1577.75,-0.93
-OFSS,7765.0,-1.09
-TCS,3565.0,-1.14
-COFORGE,8010.55,-1.22
-MPHASIS,2466.65,-1.34
-PERSISTENT,5425.1,-1.61
-INFY,1541.5,-1.86
+Error: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("a[target='_self']") to be visible

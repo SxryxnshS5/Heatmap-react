@@ -1,16 +1,3 @@
-name,price,change
-NESTLEIND,2283.45,1.45
-ITC,413.2,0.84
-TATACONSUM,1010.3,0.84
-DABUR,510.7,0.83
-HINDUNILVR,2276.2,0.77
-UNITDSPR,1410.45,0.65
-COLPAL,2397.95,0.34
-MARICO,653.65,0.31
-PATANJALI,1813.0,0.25
-UBL,1999.35,0.01
-BRITANNIA,4927.25,-0.2
-GODREJCP,1155.45,-0.33
-VBL,537.65,-0.37
-EMAMILTD,573.8,-1.05
-RADICO,2398.05,-1.27
+Error: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("a[target='_self']") to be visible
