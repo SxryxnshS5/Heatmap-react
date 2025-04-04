@@ -1,3 +1,16 @@
-Error: Page.wait_for_selector: Timeout 60000ms exceeded.
-Call log:
-  - waiting for locator("a[target='_self']") to be visible
+name,price,change
+TATACONSUM,1090.65,1.83
+NESTLEIND,2264.9,0.86
+BRITANNIA,5111.35,0.75
+MARICO,664.75,0.57
+COLPAL,2421.15,0.47
+EMAMILTD,577.7,0.33
+HINDUNILVR,2251.55,0.31
+GODREJCP,1164.4,0.2
+UNITDSPR,1428.5,-0.12
+UBL,1978.35,-0.24
+ITC,408.3,-0.27
+PATANJALI,1865.95,-0.68
+RADICO,2349.15,-0.75
+DABUR,461.6,-0.82
+VBL,535.0,-1.74

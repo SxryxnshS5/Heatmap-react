@@ -1,3 +1,16 @@
-Error: Page.wait_for_selector: Timeout 60000ms exceeded.
-Call log:
-  - waiting for locator("a[target='_self']") to be visible
+name,price,change
+M&M,2607.8,-0.14
+TVSMOTOR,2468.7,-0.3
+MRF,113600.3,-1.11
+EICHERMOT,5303.9,-1.4
+BOSCHLTD,27595.1,-1.49
+ASHOKLEY,206.52,-1.63
+BAJAJ-AUTO,7746.65,-2.09
+TIINDIA,2639.7,-2.22
+EXIDEIND,363.35,-2.38
+HEROMOTOCO,3657.55,-2.55
+MARUTI,11369.55,-2.73
+BALKRISIND,2406.65,-3.03
+MOTHERSON,124.44,-3.49
+TATAMOTORS,622.15,-4.86
+BHARATFORG,1030.5,-7.75

@@ -1,3 +1,16 @@
-Error: Page.wait_for_selector: Timeout 60000ms exceeded.
-Call log:
-  - waiting for locator("a[target='_self']") to be visible
+name,price,change
+APLAPOLLO,1550.55,-0.98
+ADANIENT,2367.2,-1.81
+WELCORP,840.55,-2.1
+JSWSTEEL,1015.1,-2.77
+LLOYDSME,1283.35,-2.81
+JSL,573.5,-3.55
+SAIL,114.3,-3.58
+NMDC,67.85,-3.66
+TATASTEEL,147.33,-4.09
+HINDZINC,440.05,-4.16
+JINDALSTEL,867.25,-4.19
+VEDL,418.3,-4.82
+HINDALCO,620.0,-5.0
+HINDCOPPER,213.3,-5.1
+NATIONALUM,163.61,-5.24

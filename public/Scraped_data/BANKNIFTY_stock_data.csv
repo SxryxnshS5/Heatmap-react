@@ -1,3 +1,13 @@
-Error: Page.wait_for_selector: Timeout 60000ms exceeded.
-Call log:
-  - waiting for locator("a[target='_self']") to be visible
+name,price,change
+HDFCBANK,1838.2,2.42
+ICICIBANK,1331.7,0.16
+KOTAKBANK,2134.9,0.11
+FEDERALBNK,193.67,-0.24
+BANKBARODA,236.2,-0.24
+SBIN,776.6,-0.33
+AXISBANK,1081.7,-0.75
+PNB,97.56,-1.45
+CANBK,92.77,-1.71
+AUBANK,550.75,-2.25
+INDUSINDBK,691.75,-2.49
+IDFCFIRSTB,58.4,-3.23

@@ -1,3 +1,11 @@
-Error: Page.wait_for_selector: Timeout 60000ms exceeded.
-Call log:
-  - waiting for locator("a[target='_self']") to be visible
+name,price,change
+OFSS,7595.7,0.19
+TCS,3353.0,-1.47
+HCLTECH,1445.4,-1.68
+TECHM,1345.7,-1.73
+INFY,1469.35,-1.81
+LTIM,4257.0,-1.96
+MPHASIS,2327.5,-1.96
+PERSISTENT,4674.95,-2.47
+WIPRO,249.8,-2.56
+COFORGE,6894.6,-3.67
