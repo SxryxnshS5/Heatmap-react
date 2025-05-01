@@ -26,16 +26,26 @@ jobs:
         
         for symbol in $SYMBOLS; do
           echo "Scraping data for $symbol..."
+          temp_file="temp_${symbol}.csv"
           output_file="public/Scraped_data/${symbol}_stock_data.csv"
-          
-          if curl --retry 5 --retry-delay 60 --max-time 600 -o "$output_file" "https://python-scraper-api-r1uj.onrender.com/api/$symbol"; then
-            echo "Successfully scraped data for $symbol"
+
+          if curl --retry 5 --retry-delay 60 --max-time 600 -o "$temp_file" "https://python-scraper-api-r1uj.onrender.com/api/$symbol"; then
+            # Check if file contains valid CSV header
+            if grep -q '^name,price,change' "$temp_file"; then
+              mv "$temp_file" "$output_file"
+              echo "Successfully scraped and saved data for $symbol"
+            else
+              echo "Downloaded file for $symbol is not valid CSV. Skipping overwrite."
+              failed_symbols+=("$symbol")
+              rm -f "$temp_file"
+            fi
           else
             echo "Failed to scrape data for $symbol"
             failed_symbols+=("$symbol")
+            rm -f "$temp_file"
           fi
         done
-        
+
         if [ ${#failed_symbols[@]} -ne 0 ]; then
           echo "The following symbols failed to scrape: ${failed_symbols[*]}"
         else
