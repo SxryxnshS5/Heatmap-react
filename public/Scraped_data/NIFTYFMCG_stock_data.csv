@@ -1,3 +1,16 @@
-Error: Page.wait_for_selector: Timeout 60000ms exceeded.
-Call log:
-  - waiting for locator("a[target='_self']") to be visible
+name,price,change
+UNITDSPR,1563.9,1.16
+HINDUNILVR,2342.1,0.88
+DABUR,487.75,0.85
+NESTLEIND,2388.2,0.03
+ITC,425.8,-0.05
+MARICO,710.45,-0.13
+GODREJCP,1260.5,-0.17
+TATACONSUM,1165.8,-0.27
+UBL,2160.0,-0.34
+BRITANNIA,5438.9,-0.54
+PATANJALI,1906.0,-0.65
+VBL,522.35,-1.29
+RADICO,2455.7,-1.37
+EMAMILTD,624.7,-1.67
+COLPAL,2587.4,-2.15
