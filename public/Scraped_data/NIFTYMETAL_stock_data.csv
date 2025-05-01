@@ -1,16 +1,3 @@
-name,price,change
-APLAPOLLO,1629.8,1.85
-JSL,576.5,1.76
-LLOYDSME,1220.6,1.45
-HINDALCO,627.35,0.77
-JINDALSTEL,899.55,0.46
-VEDL,417.6,0.31
-JSWSTEEL,1038.7,0.3
-NMDC,65.67,0.15
-SAIL,115.24,-0.03
-HINDCOPPER,218.25,-0.05
-NATIONALUM,157.32,-0.18
-ADANIENT,2326.3,-0.18
-TATASTEEL,140.92,-0.41
-WELCORP,764.35,-0.79
-HINDZINC,441.8,-0.82
+Error: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("a[target='_self']") to be visible

@@ -1,16 +1,3 @@
-name,price,change
-TIINDIA,2829.4,1.14
-M&M,2932.6,0.79
-MARUTI,11912.0,0.6
-BALKRISIND,2612.5,0.57
-BOSCHLTD,29290.0,0.43
-ASHOKLEY,228.14,0.12
-HEROMOTOCO,3853.5,0.02
-EXIDEIND,369.9,-0.01
-MRF,132480.0,-0.24
-EICHERMOT,5557.5,-0.39
-BAJAJ-AUTO,8038.5,-0.5
-TVSMOTOR,2685.5,-0.63
-BHARATFORG,1125.1,-0.78
-MOTHERSON,133.29,-2.05
-TATAMOTORS,648.6,-2.55
+Error: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("a[target='_self']") to be visible

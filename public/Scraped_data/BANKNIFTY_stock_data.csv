@@ -1,13 +1,3 @@
-name,price,change
-HDFCBANK,1931.9,1.21
-KOTAKBANK,2213.8,0.4
-ICICIBANK,1430.5,0.05
-AXISBANK,1181.0,-0.53
-INDUSINDBK,831.55,-0.65
-BANKBARODA,251.45,-0.7
-CANBK,98.3,-1.04
-PNB,101.46,-1.14
-FEDERALBNK,200.99,-1.19
-SBIN,799.3,-1.63
-AUBANK,693.2,-1.82
-IDFCFIRSTB,65.58,-2.02
+Error: Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator("a[target='_self']") to be visible
