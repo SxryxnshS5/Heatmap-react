@@ -1,3 +1,5 @@
+*Under maintenance*
+
 # 📊 Stock Heatmap React Web App
 
 This project visualizes stock market data as a dynamic heatmap, leveraging **React**, **D3.js**, and automated data updates powered by my [Python Playwright Stock Scraper API](https://github.com/SxryxnshS5/Python-Playwright-StockScraper-API). The app is designed to provide a clear, interactive representation of stock market trends.
